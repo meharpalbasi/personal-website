@@ -6,7 +6,7 @@ import estonia from './estonia.jpg';
 import estonia2 from './estonia2.jpg';
 import kualalumpur1 from './kualalumpur1.jpg';
 import kajang from './kajang.jpg';
-import kl4 from './kl4.jpg';
+import kl4 from './KL4.jpg';
 import kualalumpur3 from './kualalumpur3.jpg';
 import langkawi from './langkawi.jpeg';
 import lisbon from './lisbon.jpg';
