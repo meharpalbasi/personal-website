@@ -22,7 +22,7 @@ import {
 } from '../data/lifeApi';
 
 const seoTitle = `About`;
-const seoDescription = `A few words about me.`;
+const seoDescription = `A few words about myself.`;
 
 export default function AboutMe() {
   const randomQuote = useMemo(() => Quotes[Math.floor(Math.random() * Quotes.length)], []);
@@ -54,7 +54,7 @@ export default function AboutMe() {
             </div>
           </div>
           <div className="lg:order-first lg:row-span-2">
-            <PageTitle>Hi, I&apos;m Bartosz Jarocki.</PageTitle>
+            <PageTitle>Hi, I&apos;m Meharpal Basi.</PageTitle>
             <div className="mt-6 text-base">{AboutExtended}</div>
             <div className="mt-6 flex gap-6">
               {SocialMedia.map((socialProfile) => (
@@ -70,44 +70,14 @@ export default function AboutMe() {
             <Section>
               <Section.Title as="h2">Work</Section.Title>
               <Section.Content>
-                I&apos;m a software developer with over 13 years of experience. I started as a C/C++
-                developer, then transitioned to Android world and now I&apos;m mostly focused on
-                developing great user experiences using React.
+                I&apos;m a Data Analyst with over 3 years of experience. I started as an Insights Analyst, then transitioned to Data Analytics and I&apos;m mostly focused on
+                creating interactive data applications.
                 <br />
-                <br />I created multiple Android applications from scratch for companies around the
-                world like{' '}
-                <ExternalLink href={'https://www.visionmedia.com/'}>VisionMedia</ExternalLink>,{' '}
-                <ExternalLink href={'https://www.dkms.org/en'}>DKMS</ExternalLink>,{' '}
-                <ExternalLink href={'https://www.aaa.com/'}>AAA</ExternalLink>,{' '}
-                <ExternalLink href={'https://polskapress.pl/pl'}>PolskaPress</ExternalLink> or{' '}
-                <ExternalLink href={'https://www.canaldigital.no/'}>Canal Digital</ExternalLink>. I
-                helped to create/review/design mobile applications for startups like{' '}
-                <ExternalLink href={'https://play.google.com/store/apps/details?id=io.bimapp'}>
-                  Bim
-                </ExternalLink>
-                , <ExternalLink href={'https://www.tastycloud.fr'}>Tastycloud</ExternalLink>,{' '}
-                <ExternalLink
-                  href={'https://play.google.com/store/apps/details?id=com.howdyhub.howdy'}
-                >
-                  Howdy
-                </ExternalLink>{' '}
-                and{' '}
-                <ExternalLink
-                  href={
-                    'https://play.google.com/store/apps/details?id=com.vikingco.vikingapp.poland'
-                  }
-                >
-                  Mobile Vikings
-                </ExternalLink>
-                . I developed a WebRTC powered video conferencing frontend application using
-                React.js/GraphQL/Typescript for{' '}
-                <ExternalLink href={'https://www.evercast.us'}>Evercast</ExternalLink>. I also had
-                led development teams many times. If you&apos;d like to work with me{' '}
-                <ExternalLink href="https://twitter.com/messages/compose?recipient_id=512460212">
-                  DM me on Twitter
-                </ExternalLink>{' '}
-                or just{' '}
-                <ExternalLink href="mailto:bartosz.jarocki@icloud.com">email me.</ExternalLink>
+                <br />Check out the Creating tab for what I have created!
+      
+               If you&apos;d like to work with me{' '}
+                just{' '}
+                <ExternalLink href="mailto:meharpalbasi45@gmail.com">email me.</ExternalLink>
               </Section.Content>
             </Section>
             <Section>

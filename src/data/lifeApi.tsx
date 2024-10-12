@@ -20,16 +20,18 @@ import TastyCloudLogo from '../images/logos/tastycloud.png';
 import YearProgressLogo from '../images/logos/yearprogress.svg';
 import Minimal from '../images/logos/minimal.svg';
 import { LinkedInIcon } from '../components/icons/LinkedInIcon';
+import LHVLogo from '../images/logos/uk-thumb-3.png'
+import PentaLogo from '../images/logos/penta.jpg'
 
-export const Name = 'Bartosz Jarocki';
+export const Name = 'Meharpal Basi';
 
 export const About = (
   <>
-    {`I used to consider myself a software engineer, but the reality is that I simply enjoy creating things. If you'd like to get in touch,`}{' '}
-    <ExternalLink href="mailto:bartosz@jarocki.me">send me an email.</ExternalLink>
+    {`Data Analyst, just trying to create things,`}{' '}
+    <ExternalLink href="mailto:meharpalbasi45@gmail.com">send me an email.</ExternalLink>
   </>
 );
-export const AboutExtended = `I live in Wrocław, Poland, having grown up in the small town of Góra in the western part of the country. I have a bachelor's degree in Control Systems Engineering and Robotics from the Wrocław University of Technology. I like programming, books, plants, mountain biking, whisky, and traveling the world with my wife, Kasia. The cosmos fascinates me, and I take great delight in gazing at the stars.`;
+export const AboutExtended = `I live in London, England I have a bachelor's degree in Economics from the University of Warwick. I like Data, Travelling, Financial Markets, Football, The NFL and subsequently Sports Betting.`;
 
 export type Project = {
   title: string;
@@ -44,9 +46,9 @@ export type Project = {
 
 export const MyCurrentProjects: Project[] = [
   {
-    title: 'Consultly',
-    techStack: ['Side Project', 'TypeScript', 'Next.js', 'WebRTC'],
-    description: 'A platform to build and grow your online business.',
+    title: 'Premier League Overs and Unders',
+    techStack: ['Side Project', 'Python', 'Flask', 'SQLite'],
+    description: 'An app that allows users to bet on the outcome of the Premier League,',
     logo: Consultly,
     link: {
       label: 'consultly.com',
@@ -64,84 +66,61 @@ export const MyCurrentProjects: Project[] = [
     },
   },
   {
-    title: 'Jarocki.me',
-    techStack: ['Side Project', 'Next.js', 'MDX'],
-    description: 'My personal website you are currently on, built with Next.js.',
+    title: 'Resume.me',
+    techStack: ['Side Project', 'Next.js', 'TypeScript'],
+    description: 'My Resume which you can access on the website you are currently on, built with Next.js.',
     logo: JarockiMeLogo,
     link: {
       label: 'github.com',
-      href: 'https://github.com/BartoszJarocki/web-jarocki-me',
+      href: 'https://github.com/meharpalbasi/resume',
     },
   },
   {
-    title: 'Minimal',
-    techStack: ['Side Project', 'Next.js', 'Puppeteer'],
-    description: 'Minimalist calendars, habit trackers and planners generator.',
+    title: 'meharpalbasi.com',
+    techStack: ['Side Project', 'Next.js'],
+    description: 'The Website you are currently on, built with Next.js',
     logo: Minimal,
     link: {
       label: 'useminimal.com',
-      href: 'https://useminimal.com',
-    },
-  },
-  {
-    title: 'Barepapers',
-    techStack: ['Side Project', 'Next.js', 'Puppeteer'],
-    description: 'Generates beautiful wallpapers using random shapes and gradients.',
-    logo: BarepapersLogo,
-    link: {
-      label: 'barepapers.com',
-      href: 'https://barepapers.com',
-    },
-  },
-  {
-    title: 'Year progress',
-    techStack: ['Side Project', 'TypeScript', 'Next.js'],
-    description: 'Tracks current year progress and displays a countdown.',
-    logo: YearProgressLogo,
-    link: {
-      label: 'getyearprogress.com',
-      href: 'https://getyearprogress.com',
+      href: 'meharpalbasi.com',
     },
   },
 ];
 
 export const MyPastProjects: Project[] = [
   {
-    title: 'Parabol',
-    techStack: ['Full Stack Developer', 'TypeScript', 'React', 'Node.js', 'GraphQL'],
-    description: 'The Agile meeting co-pilot that delivers better meetings with less effort.',
-    logo: ParabolLogo,
-    link: {
-      label: 'github.com',
-      href: 'https://github.com/ParabolInc/parabol',
-    },
-  },
-  {
-    title: 'Evercast',
-    techStack: [
-      'Lead Frontend Developer',
-      'From scratch',
-      'TypeScript',
-      'React',
-      'Node.js',
-      'GraphQL',
-    ],
-    description:
-      'Creative collaboration platform that combines video conferencing and HD media streaming.',
+    title: 'NFL Interception Model',
+    techStack: ['Python', 'DataScience', 'SKLearn'],
+    description: "In this project I use the NFL's play by play data to calculate which Quarterbacks under-performed vs over-performed their expected amount of interceptions. In this model I use a logistic regression, random forest and an XGBOOST model; calculating subsequent Brier scores.",
     logo: EvercastLogo,
     link: {
-      label: 'evercast.us',
-      href: 'https://www.evercast.us/',
+      label: 'github.com',
+      href: 'https://github.com/meharpalbasi/interception_modelling',
     },
   },
   {
-    title: 'Mobile Vikings',
-    techStack: ['Lead Android Developer', 'Android', 'Kotlin'],
-    description: 'Android application for leading virtual mobile operator in Poland.',
-    logo: MobileVikingsLogo,
+    title: 'S&P500 Analyzer',
+    techStack: [
+      'Streamlit',
+      'Python',
+      'Yahoo Finance API',
+    ],
+    description:
+      'In this Streamlit program I visualize the top gainers and losers of the S&P500 within a chosen timeframe.',
+    logo: EvercastLogo,
     link: {
-      label: 'mobilevikings.pl',
-      href: 'https://mobilevikings.pl/',
+      label: 'github.com',
+      href: 'https://github.com/meharpalbasi/equity-dashboard',
+    },
+  },
+  {
+    title: 'NFL Quarterback Through the Seasons',
+    techStack: ['Python', 'Streamlit'],
+    description: 'In this streamlit application I use the NFL play by play data to visualize NFL Quarterbacks cumulative Passing Yards, Touchdowns and Interceptions through the weeks.',
+    logo: EvercastLogo,
+    link: {
+      label: 'github.com',
+      href: 'https://github.com/meharpalbasi/NFL-Quarterback-App',
     },
   },
   {
@@ -185,40 +164,25 @@ export const MyPastProjects: Project[] = [
 ];
 
 export const SocialMedia = [
-  { name: 'Twitter', link: 'https://twitter.com/BartoszJarocki', icon: XIcon },
-  { name: 'Instagram', link: 'https://www.instagram.com/bartosz.jarocki/', icon: InstagramIcon },
-  { name: 'Github', link: 'https://github.com/BartoszJarocki', icon: GitHubIcon },
-  { name: 'LinkedIn', link: 'https://www.linkedin.com/in/bjarocki', icon: LinkedInIcon },
+  { name: 'Instagram', link: 'https://www.instagram.com/_msb3/', icon: InstagramIcon },
+  { name: 'Github', link: 'https://github.com/meharpalbasi', icon: GitHubIcon },
+  { name: 'LinkedIn', link: 'https://www.linkedin.com/in/meharpal-basi/', icon: LinkedInIcon },
 ] as const;
 
 export const Work = [
   {
-    company: 'Parabol',
-    title: 'Full Stack Developer',
-    logo: ParabolLogo,
-    start: '2021',
-    end: '2024',
+    company: 'LHV Bank',
+    title: 'Data Analyst',
+    logo: LHVLogo,
+    start: 'Feb 2023',
+    end: 'Now',
   },
   {
-    company: 'Clevertech',
-    title: 'Lead Android Developer → Full Stack Developer',
-    logo: ClevertechLogo,
-    start: '2015',
-    end: '2021',
-  },
-  {
-    company: 'Jojo Mobile',
-    title: 'Android Developer → Lead Android Developer',
-    logo: JojoMobileLogo,
-    start: '2012',
-    end: '2015',
-  },
-  {
-    company: 'Nokia Siemens Networks',
-    title: 'C/C++ Developer',
-    logo: NSNLogo,
-    start: '2010',
-    end: '2012',
+    company: 'Penta Group',
+    title: 'Insights Analyst',
+    logo: PentaLogo,
+    start: 'Jan 2022',
+    end: 'Feb 2023',
   },
 ] as const;
 
@@ -251,12 +215,12 @@ export const Books = [
     link: 'https://www.amazon.com/Shoe-Dog-Memoir-Creator-Nike-ebook/dp/B0176M1A44',
   },
   {
-    name: 'The Black Swan: The Impact of the Highly Improbable by Nassim Nicholas Taleb',
-    link: 'https://amzn.to/2NwihaS',
+    name: 'Winning: The Unforgiving Race to Greatness by Tim Grover',
+    link: 'https://www.amazon.co.uk/Winning-Unforgiving-Race-Greatness-Grover/dp/1982168862',
   },
   {
-    name: 'Antifragile: Things That Gain from Disorder by Nassim Nicholas Taleb',
-    link: 'https://amzn.to/3aIG805',
+    name: 'The $100 Startup by Chris Guillebeau',
+    link: 'https://www.amazon.co.uk/100-Startup-Fire-Your-Better-ebook/dp/B007WTR2W6/ref=sr_1_1?crid=CRKM2XV40J0J&dib=eyJ2IjoiMSJ9.TJG0Y_5gdWAY6GH8ng24FpKhGXUIYR1H3HXwTpUjMMNDEJjgPohMtORGqKHY2Ay-QWyRrYhZPXy4gQkzpOtkEFjtbwi8Ww45tgf7W8fdT0wPMP9LQKIjXNehR_qh3m6FDBdI1xyf_alRoWfNUemlf96AKtZrO5-8k5KFSFRhBVyomThvi84kAwuQLt-7T5NUwZAZop9--ZJQQybe49LFIFJeQ3yXNvmfuwRtgLpJ0c8.FmDCUbayqKclcossfo5GIZ-1GoTMgb3j-N9_gCYKy7E&dib_tag=se&keywords=100+dollar+startup&nsdOptOutParam=true&qid=1728600645&s=books&sprefix=100+dollar+startuo%2Cstripbooks%2C97&sr=1-1',
   },
   {
     name: 'Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets by Nassim Nicholas Taleb',
@@ -267,12 +231,12 @@ export const Books = [
     link: 'https://amzn.to/3n8ATuC',
   },
   {
-    name: 'A Guide to the Good Life: The Ancient Art of Stoic Joy by William B. Irvine',
-    link: 'https://amzn.to/3iuL1ud',
+    name: 'Football Hackers: The Science and Art of a Data Revolution by Christoph Biermann',
+    link: 'https://www.amazon.co.uk/Football-Hackers-Science-Data-Revolution/dp/1788702050/ref=sr_1_1?crid=28BGK4SPBEAOT&dib=eyJ2IjoiMSJ9.4deoGiMHNAK82srfvms0vxoZ3rb55-tkzFwhB5cu0kAEOciQgd5LXEnehzgtJlIcTnU06R8Fm8NYZWpc-SUuGvnzXSfZOs7AqJiCuCA9xEhXjiejA6VURA75h83igimq1tgGgmd7oZdd79dKElDGeDt9i4kR7GKnUSr82pGZs2mIxJqDPB_aExYSI85g2zzaQA8_5lRnX9nvZoK7V12CmgaLE_LH-o3bsteO8PqD66E.HkpwoFMLCvHejfRzVquMQVcnNmKAeKE-9YLFNZfZ8cU&dib_tag=se&keywords=football+hackers&nsdOptOutParam=true&qid=1728600821&s=books&sprefix=football+hacke%2Cstripbooks%2C82&sr=1-1',
   },
   {
-    name: 'Atomic Habits by James Clear',
-    link: 'https://amzn.to/3iqimpZ',
+    name: 'Ikigai: The Japanese Secret to a Long and Happy Life by Hector Garcia and Francesc Miralles',
+    link: 'https://www.amazon.co.uk/Ikigai-Japanese-Secret-Long-Happy/dp/B0759VH4Q9/ref=sr_1_1?crid=H1RVFA874FR0&dib=eyJ2IjoiMSJ9.7RSV1zQ3xomjXijbPW3bf5MZSrkwk4K2sZfXkCG-bwszcQTaFRV2urJ-uRlfQ-EItQs1oAOq7h51CMYsSp7ruNAquvrMuwR4FGtDhBMeX8--qWDJuHDY6_-LlvwqsGTJ2nND7y2eK2EIoeCdsUiwOQMk5oZFEsg29Yb8lWxuPsUwKHMV4V1GTldGv-gqccXp9n2-LRau4CyNZEM8BZtFUyk2aXFam9X4vTWBqCNGlkg.V_yHwXbjWb4xcXSqBljPJ2Pj9rNxyw6nNouQ4v3V9Ag&dib_tag=se&keywords=ikigai&nsdOptOutParam=true&qid=1728600877&s=books&sprefix=ikigai%2Cstripbooks%2C73&sr=1-1',
   },
 ] as const;
 
@@ -312,44 +276,24 @@ export const Podcasts = [
 
 export const PeopleWorthFollowingOnTwitter = [
   {
-    name: 'Andrew Wilkinson',
-    link: 'https://twitter.com/awilkinson',
+    name: 'Naval',
+    link: 'https://x.com/naval',
   },
   {
     name: 'Oliur',
     link: 'https://twitter.com/UltraLinx',
   },
   {
-    name: 'Jack Butcher',
-    link: 'https://twitter.com/jackbutcher',
+    name: 'Coltybrah',
+    link: 'https://x.com/coltybrah',
   },
   {
-    name: 'Sahil Lavingia',
-    link: 'https://twitter.com/shl',
-  },
-  {
-    name: 'James Clear',
-    link: 'https://twitter.com/JamesClear',
-  },
-  {
-    name: 'Naval',
-    link: 'https://twitter.com/naval',
-  },
-  {
-    name: 'Paul Graham',
-    link: 'https://twitter.com/paulg',
-  },
-  {
-    name: "John O'Nolan",
-    link: 'https://twitter.com/JohnONolan',
+    name: "Marc Lou",
+    link: 'https://x.com/marc_louvion',
   },
   {
     name: 'Jon Yongfook',
     link: 'https://twitter.com/yongfook',
-  },
-  {
-    name: 'Joel Gascoigne',
-    link: 'https://twitter.com/joelgascoigne',
   },
   {
     name: 'Pieter Levels',
@@ -363,24 +307,8 @@ export const Blogs = [
     link: 'https://waitbutwhy.com/',
   },
   {
-    name: 'Paul Graham',
-    link: 'http://www.paulgraham.com/',
-  },
-  {
-    name: 'Joel Hooks',
-    link: 'https://joelhooks.com',
-  },
-  {
-    name: 'David Perell',
-    link: 'https://www.perell.com/',
-  },
-  {
-    name: 'Dan Abramov',
-    link: 'https://overreacted.io',
-  },
-  {
-    name: 'Lee Robinson',
-    link: 'https://leerob.io',
+    name: 'Farnam Street',
+    link: 'https://fs.blog',
   },
   {
     name: 'Naval Ravikant',
@@ -465,65 +393,48 @@ export const Quotes = [
 export const Tools = {
   Workstation: [
     {
-      title: '14” MacBook Pro, M1 Max, 32GB RAM (2021)',
+      title: '15.3” MacBook Air, M3, 16GB RAM (2023)',
       description:
-        'This laptop is a top-of-the-line machine that can handle virtually any task you throw at it, making it a worthwhile investment for anyone looking for a reliable and powerful laptop that can be used for years.',
-      href: 'https://amzn.to/3XkWxhF',
+        "This laptop is a great machine that can handle virtually I've thrown at it, making it a worthwhile investment for anyone looking for a reliable and powerful laptop that can be used for years.",
+      href: 'https://www.amazon.co.uk/Apple-2024-MacBook-15-inch-Laptop/dp/B0CX2549J4/ref=sr_1_4?crid=1UMS6XD13WQ8Z&dib=eyJ2IjoiMSJ9.08X3kXEB-BcYYBnDZuf5cFIf8c6_lPLK4OXAG9PkEDAZzhNXPx0-3z64Yp-JkWibjHNH0AclSsoN8GGxq9DGIilVXxFOdoYKnYrbFC2FTFTULhCgHA3STdacRkryXfMZ9ECKBkvoH0d3jmR2T5Q0yw.rmroJboq3G2KOtpYJH5G0RvxqPF23jYgeFNjSV6TznU&dib_tag=se&keywords=m3+air&nsdOptOutParam=true&qid=1727885334&sprefix=m3+air+%2Caps%2C91&sr=8-4&ufe=INHOUSE_INSTALLMENTS%3AUK_IHI_5M_APPLE_SUP1200',
     },
     {
-      title: 'Apple Studio Display 5K (Standard Glass)',
+      title: 'Samsung UR59C 4K Curved Monitor',
       description:
-        '5K resolution helps to reduce strain on the eyes and makes it more comfortable to work for long periods of time. Not to mention that it looks great.',
-      href: 'https://amzn.to/3NnMlAu',
+        "4K Resolution which helps with working for long periods of time as it is more comfortable on the eyes. Only 60hz refresh rate but it;s greate for the price" ,
+      href: 'https://www.amazon.co.uk/32-UR59C-Curved-UHD-Monitor/dp/B09HSCHZLH',
     },
     {
-      title: 'Logitech MX Keys Mini',
+      title: 'ThinkPad T14s Gen 3 (Intel)',
       description:
-        'Backlit keys, compact design, good battery life and a great typing experience. Matches the space gray color of the laptop almost perfectly.',
-      href: 'https://amzn.to/3qSUNQS',
+        'This is my work machine which I use for my scripts and data analysis. Im not a fan of Windows but this machine is a beast and I love the ergonomic design of the keyboard. Makes those long work days more bearable.',
+      href: 'https://www.amazon.co.uk/Lenovo-ThinkPad-i7-1355U-LPDDR5x-SDRAM-802-11ax/dp/B0CJMQ2XM4/ref=sr_1_6?crid=2UJEZRP0S9Y9G&dib=eyJ2IjoiMSJ9.bORwMeBtSjCB5bv4X9JH4lSj00mlamS4l58nPFMhs38uCONgGdCempHZKZNYBLsM4g01cQu1fLbKOJIIrTO5djNacf9P2kQtb6FqEcWKyn38GEbw9uaBGgapIbnNx6tRtMIWiC3qxovsLKoCeum8-lY-TjJKGsgbZz5HBFuxHn34YYzBeqM4k8RoaoDVgw0cbJUDw-yRWhYuafja8VSA_qoMBmnrO31Tpe7hWXok-pI.jSZIvyuzdS99fYJ6gB8qzFYL9REqlj_y-eppGSeG4nY&dib_tag=se&keywords=thinkpad+t14s+intel&nsdOptOutParam=true&qid=1727885921&sprefix=thinkpad+t14s+intel%2Caps%2C114&sr=8-6&ufe=app_do%3Aamzn1.fos.16386313-b7bf-4b29-bfa1-0d3d5f3a0dd5',
     },
     {
       title: 'Logitech MX Master 3',
-      description: "Let's be honest, it just looks great with MX Keys Mini keyboard.",
+      description: "Because the Apple Magic Mouse sucks and this is the only mouse that doesn't lag with my Macbook",
       href: 'https://amzn.to/3qXIvXl',
-    },
-    {
-      title: 'Apple Magic Trackpad',
-      description:
-        'Gestures, taps and swipes are something I miss when I work with my laptop closed.',
-      href: 'https://amzn.to/3pgETza',
-    },
-    {
-      title: 'Apple Magic Mouse',
-      description:
-        'Because it looks great and it allows me to post pictures with how badly the charging port is designed.',
-      href: 'https://amzn.to/43UuA30',
-    },
-    {
-      title: 'Autonomous ErgoChair Pro',
-      description: `If I'm going to slouch in the worst ergonomic position imaginable all day, I might as well do it in an expensive chair.`,
-      href: 'https://www.autonomous.ai/office-chairs/ergonomic-chair',
     },
   ],
   Software: [
     {
       title: 'Visual Studio Code',
-      description: `I still miss WebStorm but at least VS Code does not consume 1000% CPU when I open it. And to be fair, it's a great editor.`,
+      description: `First code editor I've used and only one my companies IT will approve of. Great Editor`,
       href: 'https://code.visualstudio.com/',
     },
     {
-      title: 'iTerm2',
-      description: `I'm honestly not even sure what features I get with this that aren't just part of the macOS Terminal but it's what I use.`,
-      href: 'https://iterm2.com/',
+      title: 'Cursor',
+      description: `VS Code but for your codebase, has made creating frontends for my app way easier and writinng this description`,
+      href: 'hhttps://www.cursor.com',
     },
     {
-      title: 'TablePlus',
-      description: `Great software for working with databases. Has saved me from building about a thousand admin interfaces for my various projects over the years.`,
-      href: 'https://tableplus.com/',
+      title: 'MongoDB',
+      description: `Just super easy to use for my personal projects`,
+      href: 'https://www.mongodb.com',
     },
     {
-      title: 'Figma',
-      description: `I'm not a designer but it allows me to quickly mock up interfaces and play with my ideas. One day I'll learn how to use it properly.`,
+      title: 'DBeaver',
+      description: `Great tool for working with databases`,
       href: 'https://www.figma.com/',
     },
     {
@@ -532,19 +443,9 @@ export const Tools = {
       href: 'https://www.notion.so/',
     },
     {
-      title: 'Raycast',
-      description: `Window management, quick access to my most used apps, and a bunch of other useful features. I use it every day.`,
-      href: 'https://www.raycast.com/',
-    },
-    {
-      title: '1Password',
-      description: `Not much to say here. It's a great password manager.`,
-      href: 'https://1password.com/',
-    },
-    {
-      title: 'Cron',
-      description: `Calendar application done right`,
-      href: 'https://cron.com/',
+      title: 'Metabase',
+      description: `Use this primarily at work. I like the interface and how easy it is to create reports, visualizations and data models`,
+      href: 'https://www.metabase.com',
     },
   ],
 } as const;
