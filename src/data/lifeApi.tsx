@@ -52,17 +52,17 @@ export const MyCurrentProjects: Project[] = [
     logo: Consultly,
     link: {
       label: 'consultly.com',
-      href: 'https://consultly.com',
+      href: 'https://github.com/meharpalbasi/premierleaguepredictorapp',
     },
   },
   {
-    title: 'Monito',
-    techStack: ['Side Project', 'TypeScript', 'Next.js', 'Browser Extension'],
-    description: 'Browser extension that records everything happening in a web application.',
-    logo: MonitoLogo,
+    title: 'NBA Line Up Analyzer',
+    techStack: ['Side Project', 'Python', 'Streamlit'],
+    description: 'Application that breaks down advanced analytics of all NBA lineups from the 2023-2024 season',
+    logo: EvercastLogo,
     link: {
-      label: 'monito.dev',
-      href: 'https://monito.dev',
+      label: 'github.com',
+      href: 'https://nbalineupanalyzer.streamlit.app',
     },
   },
   {
@@ -124,42 +124,14 @@ export const MyPastProjects: Project[] = [
     },
   },
   {
-    title: 'Howdy',
-    techStack: ['Lead Android Developer', 'Android', 'Kotlin'],
-    description: 'Howdy is a place for you to join communities you care about.',
-    logo: Howdy,
+    title: 'FBREF Scraper',
+    techStack: ['Python', 'Airflow'],
+    description: 'Scrapes, combines and cleans data from FBREFs top 5 leagues and schedules it to a Postgres Database',
+    logo: EvercastLogo,
     link: {
-      label: 'play.google.com',
-      href: 'https://play.google.com/store/apps/details?id=com.howdyhub.howdy',
+      label: 'github.com',
+      href: 'https://github.com/meharpalbasi/Football_Reference_Scraper_And_Cleaner/tree/main',
     },
-  },
-  {
-    title: 'Tastycloud',
-    techStack: ['Lead Android Developer', 'Android', 'Kotlin'],
-    description: 'Android application for managing and displaying restaurant menus in kiosk mode.',
-    logo: TastyCloudLogo,
-    link: {
-      label: 'tastycloud.fr',
-      href: 'https://www.tastycloud.fr/',
-    },
-  },
-  {
-    title: 'Ambit',
-    techStack: ['Lead Android Developer', 'Android', 'Kotlin'],
-    description: 'Android application that helps with sharing your contact details.',
-    logo: AmbitLogo,
-  },
-  {
-    title: 'Bim',
-    techStack: ['Lead Android Developer', 'Android', 'Kotlin'],
-    description: 'Android application that helps with booking a table in a restaurants.',
-    logo: BimLogo,
-  },
-  {
-    title: 'Canal Digital GO',
-    techStack: ['Lead Android Developer', 'Android', 'Kotlin'],
-    description: 'Video streaming mobile application for Canal Digital subscribers.',
-    logo: CDGOLogo,
   },
 ];
 
