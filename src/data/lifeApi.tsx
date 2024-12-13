@@ -46,12 +46,22 @@ export type Project = {
 
 export const MyCurrentProjects: Project[] = [
   {
+    title: 'UK Data Analyst Jobs',
+    techStack: ['Side Project', 'Next.js', 'TypeScript'],
+    description: 'A Job Board for Data Analyst Jobs in the UK',
+    logo: EvercastLogo,
+    link: {
+      label: 'ukdataanalystjobs.com',
+      href: 'https://www.ukdataanalyst.com',
+    },
+  },
+  {
     title: 'Premier League Overs and Unders',
     techStack: ['Side Project', 'Python', 'Flask', 'SQLite'],
     description: 'An app that allows users to bet on the outcome of the Premier League,',
     logo: Consultly,
     link: {
-      label: 'consultly.com',
+      label: 'github.com',
       href: 'https://github.com/meharpalbasi/premierleaguepredictorapp',
     },
   },
@@ -61,7 +71,7 @@ export const MyCurrentProjects: Project[] = [
     description: 'Application that breaks down advanced analytics of all NBA lineups from the 2023-2024 season',
     logo: EvercastLogo,
     link: {
-      label: 'github.com',
+      label: 'streamlit.io',
       href: 'https://nbalineupanalyzer.streamlit.app',
     },
   },
@@ -71,8 +81,8 @@ export const MyCurrentProjects: Project[] = [
     description: 'My Resume which you can access on the website you are currently on, built with Next.js.',
     logo: JarockiMeLogo,
     link: {
-      label: 'github.com',
-      href: 'https://github.com/meharpalbasi/resume',
+      label: 'meharpalbasi.fyi',
+      href: 'https://www.meharpalbasi.fyi',
     },
   },
   {
@@ -81,8 +91,18 @@ export const MyCurrentProjects: Project[] = [
     description: 'The Website you are currently on, built with Next.js',
     logo: Minimal,
     link: {
-      label: 'useminimal.com',
+      label: 'meharpalbasi.com',
       href: 'meharpalbasi.com',
+    },
+  },
+  {
+    title: 'FPL User Analysis',
+    techStack: ['Side Project', 'Python', 'Streamlit'],
+    description: 'Application that shows you your FPL team performance and how you compare to the average FPL user as well as history',
+    logo: EvercastLogo,
+    link: {
+      label: 'streamlit.io',
+      href: 'https://fpluser.streamlit.app',
     },
   },
 ];
@@ -90,12 +110,22 @@ export const MyCurrentProjects: Project[] = [
 export const MyPastProjects: Project[] = [
   {
     title: 'NFL Interception Model',
-    techStack: ['Python', 'DataScience', 'SKLearn'],
+    techStack: ['Python', 'DataScience', 'SKLearn', 'Data Science'],
     description: "In this project I use the NFL's play by play data to calculate which Quarterbacks under-performed vs over-performed their expected amount of interceptions. In this model I use a logistic regression, random forest and an XGBOOST model; calculating subsequent Brier scores.",
     logo: EvercastLogo,
     link: {
       label: 'github.com',
       href: 'https://github.com/meharpalbasi/interception_modelling',
+    },
+  },
+  {
+    title: 'Who;s the best Kicker in the NFL?',
+    techStack: ['Python', 'DataScience', 'SKLearn', 'Data Science'],
+    description: "In this project I use the NFL's play by play data to calculate which Kicker over-performed their expected amount of Field Goals. In this model I use a random forest model. P.S It's Chris Boswell",
+    logo: EvercastLogo,
+    link: {
+      label: 'github.com',
+      href: 'https://github.com/meharpalbasi/Kicking-Over-Expected',
     },
   },
   {
@@ -131,6 +161,16 @@ export const MyPastProjects: Project[] = [
     link: {
       label: 'github.com',
       href: 'https://github.com/meharpalbasi/Football_Reference_Scraper_And_Cleaner/tree/main',
+    },
+  },
+  {
+    title: 'Compare your portfolio to the S&P500',
+    techStack: ['Python', 'Streamlit'],
+    description: 'A Streamlit application that allows you to compare your portfolio to the S&P500, with risk and return analysis',
+    logo: EvercastLogo,
+    link: {
+      label: 'github.com',
+      href: 'https://github.com/meharpalbasi/Portfolio-Analysis',
     },
   },
 ];
