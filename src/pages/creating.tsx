@@ -48,7 +48,7 @@ export default function Creating() {
 
         <h2 className="mt-24 text-2xl font-bold tracking-tight">Past</h2>
         <p className="mt-2 text-base">
-          Projects I worked on. Due to nature of internet businesses not all of them are still
+          Projects I worked on. Due to nature of the internet not all of them are still
           online.
         </p>
         <ul
