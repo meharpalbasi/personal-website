@@ -57,22 +57,42 @@ export const MyCurrentProjects: Project[] = [
   },
   {
     title: 'Premier League Overs and Unders',
-    techStack: ['Side Project', 'Python', 'Flask', 'SQLite'],
-    description: 'An app that allows users to bet on the outcome of the Premier League,',
-    logo: Consultly,
+    techStack: ['Side Project', 'Next.js', 'Prisma', 'Auth.js', 'SQLite'],
+    description: 'An app that allows users to bet on the outcome of the Premier League player props,',
+    logo: EvercastLogo,
     link: {
       label: 'github.com',
-      href: 'https://github.com/meharpalbasi/premierleaguepredictorapp',
+      href: 'https://github.com/meharpalbasi/premier_league_predictor',
     },
   },
   {
-    title: 'NBA Line Up Analyzer',
-    techStack: ['Side Project', 'Python', 'Streamlit'],
-    description: 'Application that breaks down advanced analytics of all NBA lineups from the 2023-2024 season',
+    title: 'FPL Analyzer',
+    techStack: ['Side Project', 'Next.js'],
+    description: 'An app that allows users to bet on the outcome of the Premier League,',
     logo: EvercastLogo,
     link: {
-      label: 'streamlit.io',
-      href: 'https://nbalineupanalyzer.streamlit.app',
+      label: 'Vercel',
+      href: 'https://fpl-app-khaki.vercel.app',
+    },
+  },
+  {
+    title: 'FPL Player and Team Dashboard',
+    techStack: ['Side Project', 'Next.js'],
+    description: 'A dashboard that allows users to viewstats of players and teams in FPL',
+    logo: EvercastLogo,
+    link: {
+      label: 'Vercel',
+      href: 'https://fps-player-app.vercel.app',
+    },
+  },
+  {
+    title: 'FPL Price Change Bot',
+    techStack: ['Side Project', 'Python', 'Telegram API','Railway'],
+    description: 'A telegram bot that sends you the price changes of FPL players daily',
+    logo: EvercastLogo,
+    link: {
+      label: 'Telegram',
+      href: 'https://web.telegram.org/a/#-1002392242605',
     },
   },
   {
@@ -87,22 +107,12 @@ export const MyCurrentProjects: Project[] = [
   },
   {
     title: 'meharpalbasi.com',
-    techStack: ['Side Project', 'Next.js'],
+    techStack: ['Side Project', 'Next.js', 'Notion API'],
     description: 'The Website you are currently on, built with Next.js',
     logo: Minimal,
     link: {
       label: 'meharpalbasi.com',
       href: 'meharpalbasi.com',
-    },
-  },
-  {
-    title: 'FPL User Analysis',
-    techStack: ['Side Project', 'Python', 'Streamlit'],
-    description: 'Application that shows you your FPL team performance and how you compare to the average FPL user as well as history',
-    logo: EvercastLogo,
-    link: {
-      label: 'streamlit.io',
-      href: 'https://fpluser.streamlit.app',
     },
   },
 ];
@@ -119,7 +129,27 @@ export const MyPastProjects: Project[] = [
     },
   },
   {
-    title: 'Who;s the best Kicker in the NFL?',
+    title: 'NFL Rush Yards Overexpected Model',
+    techStack: ['Python', 'DataScience', 'SKLearn', 'Data Science'],
+    description: "In this project I use the NFL's play by play data to calculate which Running Backs over-performed their expected amount of rushing yards. In this model I use a XGBOOST model.",
+    logo: EvercastLogo,
+    link: {
+      label: 'github.com',
+      href: 'https://github.com/meharpalbasi/rushyardsoverexpected',
+    },
+  },
+  {
+    title: 'NBA Line Up Analyzer',
+    techStack: ['Side Project', 'Python', 'Streamlit'],
+    description: 'Application that breaks down advanced analytics of all NBA lineups from the 2023-2024 season',
+    logo: EvercastLogo,
+    link: {
+      label: 'streamlit.io',
+      href: 'https://nbalineupanalyzer.streamlit.app',
+    },
+  },
+  {
+    title: 'Who\'s the best Kicker in the NFL?',
     techStack: ['Python', 'DataScience', 'SKLearn', 'Data Science'],
     description: "In this project I use the NFL's play by play data to calculate which Kicker over-performed their expected amount of Field Goals. In this model I use a random forest model. P.S It's Chris Boswell",
     logo: EvercastLogo,
@@ -171,6 +201,16 @@ export const MyPastProjects: Project[] = [
     link: {
       label: 'github.com',
       href: 'https://github.com/meharpalbasi/Portfolio-Analysis',
+    },
+  },
+  {
+    title: 'FPL User Analysis',
+    techStack: ['Side Project', 'Python', 'Streamlit'],
+    description: 'Application that shows you your FPL team performance and how you compare to the average FPL user as well as history',
+    logo: EvercastLogo,
+    link: {
+      label: 'streamlit.io',
+      href: 'https://fpluser.streamlit.app',
     },
   },
 ];
