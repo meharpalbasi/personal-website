@@ -462,7 +462,7 @@ export const Tools = {
     {
       title: 'Cursor',
       description: `VS Code but for your codebase, has made creating frontends for my app way easier and writing this description way easier`,
-      href: 'hhttps://www.cursor.com',
+      href: 'https://www.cursor.com',
     },
     {
       title: 'MongoDB',
