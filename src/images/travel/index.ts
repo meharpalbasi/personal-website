@@ -59,7 +59,7 @@ export const travelImages = [
   },
   { img: image4, title: 'Amsterdam, Netherlands', alt: 'Picture taken in Amsterdam, Netherlands' },
   { img: kualalumpur3, title: 'Kuala Lumpur, Malaysia', alt: 'Picture taken in Kuala Lumpur, Malaysia' },
-  { img: penang2, title: 'Penang, Italy', alt: 'Picture taken in Penang, Malaysia' },
+  { img: penang2, title: 'Penang, Malaysia', alt: 'Picture taken in Penang, Malaysia' },
   { img: langkawi, title: 'Langkawi, Malaysia', alt: 'Picture taken in Langkawi, Malaysia' },
   { img: image9, title: 'Barcelona, Spain', alt: 'Picture taken in Barcelona, Spain' },
   {

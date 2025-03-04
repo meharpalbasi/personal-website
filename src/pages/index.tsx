@@ -13,7 +13,7 @@ import { Note, notesApi } from '../lib/notesApi';
 
 const seoTitle = 'Meharpal Basi';
 const seoDescription =
-  'A passionate software engineer with an eye for details based in Wrocław, Poland.';
+  'Data Analyst based in London, England with a passion for creating data applications.';
 
 type Props = {
   latestNotes: Note[];

@@ -2,8 +2,8 @@
   "name": "Meharpal Basi personal website",
   "short_name": "Meharpal Basi",
   "icons": [
-    { "src": "/android_favicon_192x192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "/android2_favicon_512x512.png", "sizes": "512x512", "type": "image/png" }
+    { "src": "/favicon/android_favicon_192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/favicon/android2_favicon_512x512.png", "sizes": "512x512", "type": "image/png" }
   ],
   "theme_color": "#18181b",
   "background_color": "#18181b",

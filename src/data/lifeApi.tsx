@@ -1,23 +1,8 @@
 import { ExternalLink } from '../components/ExternalLink';
 import { GitHubIcon } from '../components/icons/GitHubIcon';
 import { InstagramIcon } from '../components/icons/InstagramIcon';
-import { XIcon } from '../components/icons/XIcon';
-import AmbitLogo from '../images/logos/ambit.png';
-import BarepapersLogo from '../images/logos/barepapers.svg';
-import BimLogo from '../images/logos/bim.png';
-import CDGOLogo from '../images/logos/cdgo.png';
-import ClevertechLogo from '../images/logos/clevertech.png';
 import EvercastLogo from '../images/logos/evercast.svg';
-import Howdy from '../images/logos/howdy.png';
 import JarockiMeLogo from '../images/logos/jarocki.svg';
-import JojoMobileLogo from '../images/logos/jojomobile.png';
-import MonitoLogo from '../images/logos/monito.svg';
-import Consultly from '../images/logos/consultly.svg';
-import MobileVikingsLogo from '../images/logos/mv.png';
-import NSNLogo from '../images/logos/nsn.svg';
-import ParabolLogo from '../images/logos/parabol.svg';
-import TastyCloudLogo from '../images/logos/tastycloud.png';
-import YearProgressLogo from '../images/logos/yearprogress.svg';
 import Minimal from '../images/logos/minimal.svg';
 import { LinkedInIcon } from '../components/icons/LinkedInIcon';
 import LHVLogo from '../images/logos/uk-thumb-3.png'
@@ -476,7 +461,7 @@ export const Tools = {
     },
     {
       title: 'Cursor',
-      description: `VS Code but for your codebase, has made creating frontends for my app way easier and writinng this description`,
+      description: `VS Code but for your codebase, has made creating frontends for my app way easier and writing this description way easier`,
       href: 'hhttps://www.cursor.com',
     },
     {
@@ -487,7 +472,7 @@ export const Tools = {
     {
       title: 'DBeaver',
       description: `Great tool for working with databases`,
-      href: 'https://www.figma.com/',
+      href: 'https://dbeaver.io/',
     },
     {
       title: 'Notion',

@@ -5,16 +5,16 @@ import { notesApi } from '../../lib/notesApi';
 
 const rss: NextApiHandler = async (req, res) => {
   const feed = new RSS({
-    title: 'Bartosz Jarocki',
-    site_url: 'https://jarocki.me',
-    feed_url: 'https://jarocki.me/rss.xml',
+    title: 'Meharpal Basi',
+    site_url: 'https://www.meharpalbasi.com',
+    feed_url: 'https://www.meharpalbasi.com/rss.xml',
   });
 
   const allPosts = await notesApi.getNotes();
   allPosts.map((post) => {
     feed.item({
       title: post.title,
-      url: `https://jarocki.me/notes/${post.slug}`,
+      url: `https://www.meharpalbasi.com/notes/${post.slug}`,
       date: post.publishedAt,
       description: post.description,
     });
