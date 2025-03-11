@@ -31,13 +31,13 @@ export type Project = {
 
 export const MyCurrentProjects: Project[] = [
   {
-    title: 'UK Data Analyst Jobs',
+    title: 'UK Data Jobs',
     techStack: ['Side Project', 'Next.js', 'TypeScript'],
-    description: 'A Job Board for Data Analyst Jobs in the UK',
+    description: 'A Job Board for Data Jobs in the UK',
     logo: EvercastLogo,
     link: {
       label: 'ukdataanalystjobs.com',
-      href: 'https://www.ukdataanalyst.com',
+      href: 'https://www.ukdatajobs.com',
     },
   },
   {
@@ -58,6 +58,16 @@ export const MyCurrentProjects: Project[] = [
     link: {
       label: 'Vercel',
       href: 'https://fpl-app-khaki.vercel.app',
+    },
+  },
+  {
+    title: 'FPL Player xPoints Model',
+    techStack: ['Python', 'Machine Learning', 'SKLearn', 'Random Forest'],
+    description: 'An open source model that predicts the xPoints of FPL players based on their performance',
+    logo: EvercastLogo,
+    link: {
+      label: 'Github',
+      href: 'https://github.com/meharpalbasi/xPoints',
     },
   },
   {
