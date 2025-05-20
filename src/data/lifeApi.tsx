@@ -57,7 +57,7 @@ export const MyCurrentProjects: Project[] = [
     logo: EvercastLogo,
     link: {
       label: 'Vercel',
-      href: 'https://fpl-app-khaki.vercel.app',
+      href: 'https://fplanaly.st/',
     },
   },
   {
