@@ -19,7 +19,9 @@ import image4 from './netherlands.jpeg';
 import image9 from './spain.jpeg';
 import penang from './penang.jpg'
 import kualalumpur2 from './kualalumpur2.jpg' 
-
+import abudhabi from './abudhabi.jpeg'
+import mumbai from './mumbai.jpeg'
+import mumbai2 from './mumbai2.jpeg'
 
 export const travelImages = [
   { img: amsterdam, title: 'Amsterdam, Netherlands', alt: 'Picture taken in Amsterdam, Netherlands' },
@@ -34,6 +36,11 @@ export const travelImages = [
     img: seminyak,
     title: "Seminyak, Bali, Indonesia",
     alt: "Picture taken in my Villa in Seminyak, Bali",
+  },
+  {
+    img: abudhabi,
+    title: "Ferrari World, Abu Dhabi, UAE",
+    alt: "Picture taken in Ferrari World in Abu Dhabi, UAE",
   },
   { img: bali, title: 'Bali, Indonesia', alt: 'Picture taken in Bali, Indonesia' },
   {
@@ -57,6 +64,11 @@ export const travelImages = [
     title: 'Gozo, Malta',
     alt: 'Picture taken in Gozo, Malta',
   },
+  {
+    img: mumbai,
+    title: 'Mumbai, India',
+    alt: 'Picture taken in Mumbai, India',
+  },
   { img: image4, title: 'Amsterdam, Netherlands', alt: 'Picture taken in Amsterdam, Netherlands' },
   { img: kualalumpur3, title: 'Kuala Lumpur, Malaysia', alt: 'Picture taken in Kuala Lumpur, Malaysia' },
   { img: penang2, title: 'Penang, Malaysia', alt: 'Picture taken in Penang, Malaysia' },
@@ -71,4 +83,5 @@ export const travelImages = [
   { img: kl4, title: 'Kuala Lumpur, Malaysia', alt: 'Picture taken in Kuala Lumpur, Malaysia' },
   { img: penang, title: 'Penang, Malaysia', alt: 'Picture taken on the beach in Penang, Malaysia'},
   { img: kualalumpur2, title: 'Kuala Lumpur, Malaysia', alt: 'Picture Taken in Batu Caves, Kuala Lumpur'},
+  { img: mumbai2, title: 'Mumbai, India', alt: 'Picture taken in Mumbai, India'},
 ];

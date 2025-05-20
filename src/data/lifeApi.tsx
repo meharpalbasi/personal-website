@@ -43,7 +43,7 @@ export const MyCurrentProjects: Project[] = [
   {
     title: 'Premier League Overs and Unders',
     techStack: ['Side Project', 'Next.js', 'Prisma', 'Auth.js', 'SQLite'],
-    description: 'An app that allows users to bet on the outcome of the Premier League player props,',
+    description: 'An app that allows users to bet on the outcome of the Premier League player props',
     logo: EvercastLogo,
     link: {
       label: 'github.com',
@@ -53,11 +53,21 @@ export const MyCurrentProjects: Project[] = [
   {
     title: 'FPL Analyzer',
     techStack: ['Side Project', 'Next.js'],
-    description: 'An app that allows users to bet on the outcome of the Premier League,',
+    description: 'An app that allows users to bet on the outcome of the Premier League',
     logo: EvercastLogo,
     link: {
-      label: 'Vercel',
+      label: 'fplanaly.st',
       href: 'https://fplanaly.st/',
+    },
+  },
+  {
+    title: 'LFC Analytics',
+    techStack: ['Side Project', 'Python', 'Scraping', 'R', 'MPLSoccer'],
+    description: 'A twitter account dedicated to match reports and analysis of Liverpool FC. All graphics/stats are created in R or Python (using mplsoccer). Data is scraped from WhoScored/Fotmob/Sofascore',
+    logo: EvercastLogo,
+    link: {
+      label: 'X',
+      href: 'https://x.com/LFCAnalytic',
     },
   },
   {
@@ -68,6 +78,16 @@ export const MyCurrentProjects: Project[] = [
     link: {
       label: 'Github',
       href: 'https://github.com/meharpalbasi/xPoints',
+    },
+  },
+  {
+    title: 'NBA Line Up Analyzer',
+    techStack: ['Side Project', 'Python', 'Next.Js'],
+    description: 'Application that breaks down advanced analytics of all NBA lineups from the 2024-2025 season, inspired by my Streamlit version',
+    logo: EvercastLogo,
+    link: {
+      label: 'nbalineup.vercel.app',
+      href: 'https://nbalineup.vercel.app/',
     },
   },
   {
@@ -461,6 +481,11 @@ export const Tools = {
       title: 'Logitech MX Master 3',
       description: "Because the Apple Magic Mouse sucks and this is the only mouse that doesn't lag with my Macbook",
       href: 'https://amzn.to/3qXIvXl',
+    },
+    {
+      title: 'The Brick',
+      description: "I get distracted way too easily, so I use this to block distracting websites and apps on my phone. The act of scanning the brick works better than any app I've tried",
+      href: 'https://getbrick.app/?srsltid=AfmBOoobMEyT-K3rqn1XIRAk-VGE-rxX1Wk48pnWCjAlIAbRpVGCDSfy',
     },
   ],
   Software: [
