@@ -36,8 +36,8 @@ export const MyCurrentProjects: Project[] = [
     description: 'A Job Board for Data Jobs in the UK',
     logo: EvercastLogo,
     link: {
-      label: 'ukdataanalystjobs.com',
-      href: 'https://www.ukdatajobs.com',
+      label: 'ukdatajobs.com',
+      href: 'https://ukdatajobs.com',
     },
   },
   {
