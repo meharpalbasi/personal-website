@@ -10,6 +10,11 @@ export default function Document() {
         <link rel="manifest" href="/favicon/site.webmanifest" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
         <meta name="theme-color" content="#18181b" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Meharpal Basi" />
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="Data Analyst, Python, Machine Learning, TypeScript, Next.js, Sports Analytics, FPL, Premier League, NFL, NBA, Data Science, Portfolio" />
+        <link rel="canonical" href="https://www.meharpalbasi.com" />
       </Head>
       <body className="flex h-full flex-col bg-zinc-50 dark:bg-black text-zinc-700 dark:text-zinc-300">
         <Main />

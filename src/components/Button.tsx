@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import React, { ComponentPropsWithRef, ElementType, forwardRef } from 'react';
+import { LoadingSpinner } from './LoadingSpinner';
 
 const variantStyles = {
   primary:
@@ -11,6 +12,7 @@ const variantStyles = {
 type Props<T extends ElementType> = {
   as?: T;
   variant?: keyof typeof variantStyles;
+  loading?: boolean;
 } & ComponentPropsWithRef<T>;
 
 export const Button = forwardRef(
@@ -18,18 +20,21 @@ export const Button = forwardRef(
     { as: Component = 'button', ...props }: Props<T>,
     ref: React.Ref<T extends keyof JSX.IntrinsicElements ? JSX.IntrinsicElements[T] : T>,
   ) => {
-    const { className, variant = 'primary', children, ...rest } = props;
+    const { className, variant = 'primary', loading, children, disabled, ...rest } = props;
 
     return (
       <Component
         className={clsx(
           'inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none',
           variantStyles[variant],
+          (loading || disabled) && 'opacity-50 cursor-not-allowed',
           className,
         )}
+        disabled={loading || disabled}
         {...rest}
         ref={ref}
       >
+        {loading && <LoadingSpinner size="sm" />}
         {children}
       </Component>
     );

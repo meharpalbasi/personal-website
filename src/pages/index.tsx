@@ -20,6 +20,39 @@ type Props = {
 };
 
 export default function Home({ latestNotes }: Props) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Meharpal Basi",
+    "jobTitle": "Data Analyst",
+    "description": "Data Analyst based in London, England with a passion for creating data applications",
+    "url": "https://www.meharpalbasi.com",
+    "image": "https://www.meharpalbasi.com/assets/blog/authors/meharpal.jpeg",
+    "sameAs": [
+      "https://www.linkedin.com/in/meharpal-basi/",
+      "https://github.com/meharpalbasi",
+      "https://www.instagram.com/_msb3/"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "LHV Bank"
+    },
+    "alumniOf": {
+      "@type": "Organization",
+      "name": "University of Warwick"
+    },
+    "knowsAbout": [
+      "Data Analysis",
+      "Python",
+      "Machine Learning",
+      "TypeScript",
+      "Next.js",
+      "Sports Analytics",
+      "SQL",
+      "Data Science"
+    ]
+  };
+
   return (
     <>
       <NextSeo
@@ -32,6 +65,12 @@ export default function Home({ latestNotes }: Props) {
               url: `${process.env.NEXT_PUBLIC_URL}/api/og?title=${seoTitle}&description=${seoDescription}`,
             },
           ],
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData),
         }}
       />
       <Container className="mt-9">
