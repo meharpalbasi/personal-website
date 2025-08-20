@@ -129,7 +129,7 @@ export default function AboutMe() {
               </Section.Content>
             </Section>
             <Section>
-              <Section.Title as="h2">People with unique perspective I follow</Section.Title>
+            <Section.Title as="h2">People with unique perspectives I follow</Section.Title>
               <Section.Content>
                 {PeopleWorthFollowingOnTwitter.map<React.ReactNode>((personOnTwitter) => (
                   <ExternalLink key={personOnTwitter.name} href={personOnTwitter.link}>
