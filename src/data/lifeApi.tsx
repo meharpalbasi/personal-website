@@ -5,8 +5,8 @@ import EvercastLogo from '../images/logos/evercast.svg';
 import JarockiMeLogo from '../images/logos/jarocki.svg';
 import Minimal from '../images/logos/minimal.svg';
 import { LinkedInIcon } from '../components/icons/LinkedInIcon';
-import LHVLogo from '../images/logos/uk-thumb-3.png'
-import PentaLogo from '../images/logos/penta.jpg'
+import LHVLogo from '../images/logos/uk-thumb-3.png';
+import PentaLogo from '../images/logos/penta.jpg';
 
 export const Name = 'Meharpal Basi';
 
@@ -16,7 +16,7 @@ export const About = (
     <ExternalLink href="mailto:meharpalbasi45@gmail.com">send me an email.</ExternalLink>
   </>
 );
-export const AboutExtended = `I live in London, England I have a bachelor's degree in Economics from the University of Warwick. I like Data, Travelling, Financial Markets, Football, The NFL and subsequently Sports Betting.`;
+export const AboutExtended = `I live in London, England. I have a bachelor's degree in Economics from the University of Warwick. I like data, travelling, financial markets, football, the NFL, and subsequently sports betting.`;
 
 export type Project = {
   title: string;
@@ -63,7 +63,7 @@ export const MyCurrentProjects: Project[] = [
   {
     title: 'LFC Analytics',
     techStack: ['Side Project', 'Python', 'Scraping', 'R', 'MPLSoccer'],
-    description: 'A twitter account dedicated to match reports and analysis of Liverpool FC. All graphics/stats are created in R or Python (using mplsoccer). Data is scraped from WhoScored/Fotmob/Sofascore',
+    description: 'A Twitter account dedicated to match reports and analysis of Liverpool FC. All graphics/stats are created in R or Python (using mplsoccer). Data is scraped from WhoScored, FotMob, and SofaScore',
     logo: EvercastLogo,
     link: {
       label: 'X',
@@ -81,7 +81,7 @@ export const MyCurrentProjects: Project[] = [
     },
   },
   {
-    title: 'NBA Line Up Analyzer',
+    title: 'NBA Lineup Analyzer',
     techStack: ['Side Project', 'Python', 'Next.Js'],
     description: 'Application that breaks down advanced analytics of all NBA lineups from the 2024-2025 season, inspired by my Streamlit version',
     logo: EvercastLogo,
@@ -93,7 +93,7 @@ export const MyCurrentProjects: Project[] = [
   {
     title: 'FPL Player and Team Dashboard',
     techStack: ['Side Project', 'Next.js'],
-    description: 'A dashboard that allows users to viewstats of players and teams in FPL',
+    description: 'A dashboard that allows users to view stats of players and teams in FPL',
     logo: EvercastLogo,
     link: {
       label: 'Vercel',
@@ -102,8 +102,8 @@ export const MyCurrentProjects: Project[] = [
   },
   {
     title: 'FPL Price Change Bot',
-    techStack: ['Side Project', 'Python', 'Telegram API','Railway'],
-    description: 'A telegram bot that sends you the price changes of FPL players daily',
+    techStack: ['Side Project', 'Python', 'Telegram API', 'Railway'],
+    description: 'A Telegram bot that sends you the price changes of FPL players daily',
     logo: EvercastLogo,
     link: {
       label: 'Telegram',
@@ -154,7 +154,7 @@ export const MyPastProjects: Project[] = [
     },
   },
   {
-    title: 'NBA Line Up Analyzer',
+    title: 'NBA Lineup Analyzer',
     techStack: ['Side Project', 'Python', 'Streamlit'],
     description: 'Application that breaks down advanced analytics of all NBA lineups from the 2023-2024 season',
     logo: EvercastLogo,
@@ -174,14 +174,14 @@ export const MyPastProjects: Project[] = [
     },
   },
   {
-    title: 'S&P500 Analyzer',
+    title: 'S&P 500 Analyzer',
     techStack: [
       'Streamlit',
       'Python',
       'Yahoo Finance API',
     ],
     description:
-      'In this Streamlit program I visualize the top gainers and losers of the S&P500 within a chosen timeframe.',
+      'In this Streamlit program I visualize the top gainers and losers of the S&P 500 within a chosen timeframe.',
     logo: EvercastLogo,
     link: {
       label: 'github.com',
@@ -199,9 +199,9 @@ export const MyPastProjects: Project[] = [
     },
   },
   {
-    title: 'FBREF Scraper',
+    title: 'FBRef Scraper',
     techStack: ['Python', 'Airflow'],
-    description: 'Scrapes, combines and cleans data from FBREFs top 5 leagues and schedules it to a Postgres Database',
+    description: "Scrapes, combines, and cleans data from FBRef's top 5 leagues and schedules it to a Postgres database",
     logo: EvercastLogo,
     link: {
       label: 'github.com',
@@ -209,9 +209,9 @@ export const MyPastProjects: Project[] = [
     },
   },
   {
-    title: 'Compare your portfolio to the S&P500',
+    title: 'Compare your portfolio to the S&P 500',
     techStack: ['Python', 'Streamlit'],
-    description: 'A Streamlit application that allows you to compare your portfolio to the S&P500, with risk and return analysis',
+    description: 'A Streamlit application that allows you to compare your portfolio to the S&P 500, with risk and return analysis',
     logo: EvercastLogo,
     link: {
       label: 'github.com',
@@ -462,24 +462,24 @@ export const Tools = {
     {
       title: '15.3” MacBook Air, M3, 16GB RAM (2023)',
       description:
-        "This laptop is a great machine that can handle virtually I've thrown at it, making it a worthwhile investment for anyone looking for a reliable and powerful laptop that can be used for years.",
+        "This laptop is a great machine that can handle virtually anything I've thrown at it, making it a worthwhile investment for anyone looking for a reliable and powerful laptop that can be used for years.",
       href: 'https://www.amazon.co.uk/Apple-2024-MacBook-15-inch-Laptop/dp/B0CX2549J4/ref=sr_1_4?crid=1UMS6XD13WQ8Z&dib=eyJ2IjoiMSJ9.08X3kXEB-BcYYBnDZuf5cFIf8c6_lPLK4OXAG9PkEDAZzhNXPx0-3z64Yp-JkWibjHNH0AclSsoN8GGxq9DGIilVXxFOdoYKnYrbFC2FTFTULhCgHA3STdacRkryXfMZ9ECKBkvoH0d3jmR2T5Q0yw.rmroJboq3G2KOtpYJH5G0RvxqPF23jYgeFNjSV6TznU&dib_tag=se&keywords=m3+air&nsdOptOutParam=true&qid=1727885334&sprefix=m3+air+%2Caps%2C91&sr=8-4&ufe=INHOUSE_INSTALLMENTS%3AUK_IHI_5M_APPLE_SUP1200',
     },
     {
       title: 'Samsung UR59C 4K Curved Monitor',
       description:
-        "4K Resolution which helps with working for long periods of time as it is more comfortable on the eyes. Only 60hz refresh rate but it;s greate for the price" ,
+        "4K resolution, which helps with working for long periods of time as it is more comfortable on the eyes. Only 60Hz refresh rate but it's great for the price",
       href: 'https://www.amazon.co.uk/32-UR59C-Curved-UHD-Monitor/dp/B09HSCHZLH',
     },
     {
       title: 'ThinkPad T14s Gen 3 (Intel)',
       description:
-        'This is my work machine which I use for my scripts and data analysis. Im not a fan of Windows but this machine is a beast and I love the ergonomic design of the keyboard. Makes those long work days more bearable.',
+        "This is my work machine, which I use for my scripts and data analysis. I'm not a fan of Windows, but this machine is a beast and I love the ergonomic design of the keyboard. Makes those long workdays more bearable.",
       href: 'https://www.amazon.co.uk/Lenovo-ThinkPad-i7-1355U-LPDDR5x-SDRAM-802-11ax/dp/B0CJMQ2XM4/ref=sr_1_6?crid=2UJEZRP0S9Y9G&dib=eyJ2IjoiMSJ9.bORwMeBtSjCB5bv4X9JH4lSj00mlamS4l58nPFMhs38uCONgGdCempHZKZNYBLsM4g01cQu1fLbKOJIIrTO5djNacf9P2kQtb6FqEcWKyn38GEbw9uaBGgapIbnNx6tRtMIWiC3qxovsLKoCeum8-lY-TjJKGsgbZz5HBFuxHn34YYzBeqM4k8RoaoDVgw0cbJUDw-yRWhYuafja8VSA_qoMBmnrO31Tpe7hWXok-pI.jSZIvyuzdS99fYJ6gB8qzFYL9REqlj_y-eppGSeG4nY&dib_tag=se&keywords=thinkpad+t14s+intel&nsdOptOutParam=true&qid=1727885921&sprefix=thinkpad+t14s+intel%2Caps%2C114&sr=8-6&ufe=app_do%3Aamzn1.fos.16386313-b7bf-4b29-bfa1-0d3d5f3a0dd5',
     },
     {
       title: 'Logitech MX Master 3',
-      description: "Because the Apple Magic Mouse sucks and this is the only mouse that doesn't lag with my Macbook",
+      description: "Because the Apple Magic Mouse sucks and this is the only mouse that doesn't lag with my MacBook",
       href: 'https://amzn.to/3qXIvXl',
     },
     {
@@ -491,12 +491,12 @@ export const Tools = {
   Software: [
     {
       title: 'Visual Studio Code',
-      description: `First code editor I've used and only one my companies IT will approve of. Great Editor`,
+      description: `First code editor I've used and the only one my company's IT will approve of. Great editor.`,
       href: 'https://code.visualstudio.com/',
     },
     {
       title: 'Cursor',
-      description: `VS Code but for your codebase, has made creating frontends for my app way easier and writing this description way easier`,
+      description: `VS Code but for your codebase, has made creating frontends for my app way easier and writing this description way easier.`,
       href: 'https://www.cursor.com',
     },
     {
@@ -516,7 +516,7 @@ export const Tools = {
     },
     {
       title: 'Metabase',
-      description: `Use this primarily at work. I like the interface and how easy it is to create reports, visualizations and data models`,
+      description: `Use this primarily at work. I like the interface and how easy it is to create reports, visualizations and data models.`,
       href: 'https://www.metabase.com',
     },
   ],
