@@ -111,6 +111,16 @@ export const MyCurrentProjects: Project[] = [
     },
   },
   {
+    title: 'FPL Analytics Pipeline',
+    techStack: ['Side Project', 'Python', 'dbt', 'FastAPI', 'Railway'],
+    description: 'Smart FPL data pipeline with REST API that auto-fetches data daily, transforms with dbt models, and powers fplanaly.st with 8+ analytics endpoints',
+    logo: EvercastLogo,
+    link: {
+      label: 'API',
+      href: 'https://fpldbt-production.up.railway.app',
+    },
+  },
+  {
     title: 'Resume.me',
     techStack: ['Side Project', 'Next.js', 'TypeScript'],
     description: 'My Resume which you can access on the website you are currently on, built with Next.js.',

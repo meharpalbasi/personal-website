@@ -30,7 +30,7 @@ export const NavigationItems = [
   },
   {
     name: 'Resume',
-    href: 'https://resume-flame-psi.vercel.app',
+    href: 'https://www.meharpalbasi.fyi',
     type: 'external',
   },
   {
