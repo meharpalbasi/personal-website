@@ -154,15 +154,19 @@ class NotesApi {
               : [],
           title: 'title' in page.properties.title ? page.properties.title.title[0].plain_text : '',
           description:
-            'rich_text' in page.properties.description
+            'rich_text' in page.properties.description && page.properties.description.rich_text.length
               ? page.properties.description.rich_text[0].plain_text
               : '',
           slug:
-            'rich_text' in page.properties.slug ? page.properties.slug.rich_text[0].plain_text : '',
+            'rich_text' in page.properties.slug && page.properties.slug.rich_text.length
+              ? page.properties.slug.rich_text[0].plain_text
+              : '',
           isPublished:
             'checkbox' in page.properties.published ? page.properties.published.checkbox : false,
           publishedAt:
-            'date' in page.properties.publishedAt ? page.properties.publishedAt.date!.start : '',
+            'date' in page.properties.publishedAt && page.properties.publishedAt.date
+              ? page.properties.publishedAt.date.start
+              : '',
           inProgress:
             'checkbox' in page.properties.inProgress ? page.properties.inProgress.checkbox : false,
         };
