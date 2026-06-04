@@ -7,6 +7,8 @@ import Minimal from '../images/logos/minimal.svg';
 import { LinkedInIcon } from '../components/icons/LinkedInIcon';
 import LHVLogo from '../images/logos/uk-thumb-3.png';
 import PentaLogo from '../images/logos/penta.jpg';
+import PredictMarketsLogo from '../images/logos/predictmarkets.svg';
+import TransferTriviaLogo from '../images/logos/transfer-trivia.svg';
 
 export const Name = 'Meharpal Basi';
 
@@ -31,9 +33,32 @@ export type Project = {
 
 export const MyCurrentProjects: Project[] = [
   {
+    title: 'Transfer Trivia',
+    techStack: ['iOS App', 'React Native', 'Expo', 'Supabase'],
+    description:
+      'A Premier League daily game for guessing player transfers, built as a polished mobile app with thousands of transfer records.',
+    logo: TransferTriviaLogo,
+    link: {
+      label: 'github.com',
+      href: 'https://github.com/meharpalbasi/transfer_App',
+    },
+  },
+  {
+    title: 'Predict Markets',
+    techStack: ['Side Project', 'Next.js', 'FastAPI', 'SQLite'],
+    description:
+      'A football prediction-market intelligence app tracking Polymarket and Kalshi prices, market consensus, movement, arbitrage, and match-level signals.',
+    logo: PredictMarketsLogo,
+    link: {
+      label: 'predictmarkets.io',
+      href: 'https://predictmarkets.io',
+    },
+  },
+  {
     title: 'UK Data Jobs',
     techStack: ['Side Project', 'Next.js', 'TypeScript'],
-    description: 'A Job Board for Data Jobs in the UK',
+    description:
+      'A UK job board focused on data analyst, analytics engineer, data engineer, and data science roles.',
     logo: EvercastLogo,
     link: {
       label: 'ukdatajobs.com',
@@ -52,8 +77,9 @@ export const MyCurrentProjects: Project[] = [
   },
   {
     title: 'FPL Analyzer',
-    techStack: ['Side Project', 'Next.js'],
-    description: 'An app that allows users to bet on the outcome of the Premier League',
+    techStack: ['Side Project', 'Next.js', 'dbt', 'FastAPI'],
+    description:
+      'An FPL analytics app powered by a dbt pipeline, with player trends, expected stats, value picks, and team-strength views.',
     logo: EvercastLogo,
     link: {
       label: 'fplanaly.st',
