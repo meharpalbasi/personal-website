@@ -20,6 +20,7 @@ export default function Note({
 }: Props & { previousPathname: string }) {
   const url = `${process.env.NEXT_PUBLIC_URL}/notes/${slug}`;
   const openGraphImageUrl = `${process.env.NEXT_PUBLIC_URL}/api/og?title=${title}&description=${description}`;
+  const shareUrl = `https://x.com/share?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`;
 
   useEffect(() => {
     Prism.highlightAll();
@@ -56,7 +57,7 @@ export default function Note({
 
           <a
             className="group block text-xl font-semibold md:text-3xl no-underline"
-            href={`http://x.com/share?text=${title}&url=${url}`}
+            href={shareUrl}
           >
             <h4 className="max-w-lg flex cursor-pointer flex-col duration-200 ease-in-out group-hover:text-primary group-hover:fill-primary fill-white text-wrap">
               <XIcon className="my-6 h-10 w-10 transform transition-transform group-hover:-rotate-12 text-black dark:text-white group-hover:text-primary" />
