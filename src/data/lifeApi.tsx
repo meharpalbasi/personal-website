@@ -137,7 +137,7 @@ export const MyCurrentProjects: Project[] = [
     logo: Minimal,
     link: {
       label: 'meharpalbasi.com',
-      href: 'meharpalbasi.com',
+      href: 'https://www.meharpalbasi.com',
     },
   },
 ];
