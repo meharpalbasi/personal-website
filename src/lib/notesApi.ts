@@ -8,6 +8,15 @@ const notion = new Client({
   auth: process.env.NOTION_TOKEN,
 });
 
+function isNotionAuthError(error: unknown) {
+  return (
+    typeof error === 'object' &&
+    error !== null &&
+    'code' in error &&
+    (error as { code?: string }).code === 'unauthorized'
+  );
+}
+
 export type Note = {
   id: string;
   createdAt: string;
@@ -125,7 +134,16 @@ class NotesApi {
   }
 
   private getDatabaseContent = async (databaseId: string): Promise<Note[]> => {
-    const db = await this.notion.databases.query({ database_id: databaseId });
+    let db;
+    try {
+      db = await this.notion.databases.query({ database_id: databaseId });
+    } catch (error) {
+      if (isNotionAuthError(error)) {
+        console.warn('Notion token is invalid; building without notes content.');
+        return [];
+      }
+      throw error;
+    }
 
     while (db.has_more && db.next_cursor) {
       const { results, has_more, next_cursor } = await this.notion.databases.query({
