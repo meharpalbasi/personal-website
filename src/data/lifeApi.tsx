@@ -1,10 +1,13 @@
 import { ExternalLink } from '../components/ExternalLink';
 import { GitHubIcon } from '../components/icons/GitHubIcon';
 import { InstagramIcon } from '../components/icons/InstagramIcon';
-import EvercastLogo from '../images/logos/evercast.svg';
-import JarockiMeLogo from '../images/logos/jarocki.svg';
-import Minimal from '../images/logos/minimal.svg';
 import { LinkedInIcon } from '../components/icons/LinkedInIcon';
+import FieldTheoryLogo from '../images/logos/field-theory.svg';
+import FplAnalystLogo from '../images/logos/fpl-analyst.svg';
+import NbaLineupLogo from '../images/logos/nba-lineup.svg';
+import PredictionMarketsLogo from '../images/logos/pl-prediction-markets.svg';
+import UkAiJobsLogo from '../images/logos/uk-ai-jobs.svg';
+import UkDataJobsLogo from '../images/logos/uk-data-jobs.png';
 import LHVLogo from '../images/logos/uk-thumb-3.png';
 import PentaLogo from '../images/logos/penta.jpg';
 
@@ -22,7 +25,8 @@ export type Project = {
   title: string;
   techStack: string[];
   description: string;
-  logo: any;
+  logo?: any;
+  logoInset?: boolean;
   link?: {
     label: string;
     href: string;
@@ -31,113 +35,70 @@ export type Project = {
 
 export const MyCurrentProjects: Project[] = [
   {
+    title: 'UK AI Jobs',
+    techStack: ['Next.js', 'TypeScript', 'PostgreSQL', 'LLM enrichment'],
+    description:
+      'A specialist UK job board powered by a reusable multi-source collector, normalized job data, AI classification, alerts, and paid subscriptions.',
+    logo: UkAiJobsLogo,
+    link: {
+      label: 'ukaijobs.co.uk',
+      href: 'https://ukaijobs.co.uk',
+    },
+  },
+  {
     title: 'UK Data Jobs',
-    techStack: ['Side Project', 'Next.js', 'TypeScript'],
-    description: 'A Job Board for Data Jobs in the UK',
-    logo: EvercastLogo,
+    techStack: ['Next.js', 'TypeScript', 'Job board'],
+    description:
+      'A focused job board for UK data roles, helping analysts, analytics engineers, data scientists, and other data professionals find relevant opportunities.',
+    logo: UkDataJobsLogo,
     link: {
       label: 'ukdatajobs.com',
       href: 'https://ukdatajobs.com',
     },
   },
   {
-    title: 'Premier League Overs and Unders',
-    techStack: ['Side Project', 'Next.js', 'Prisma', 'Auth.js', 'SQLite'],
-    description: 'An app that allows users to bet on the outcome of the Premier League player props',
-    logo: EvercastLogo,
+    title: 'Field Theory',
+    techStack: ['Python', 'Polars', 'DuckDB', 'FastAPI', 'Next.js'],
+    description:
+      'An NFL analytics platform covering EPA, CPOE, win probability, player value, power rankings, and situational splits across play-by-play data.',
+    logo: FieldTheoryLogo,
     link: {
-      label: 'github.com',
-      href: 'https://github.com/meharpalbasi/premier_league_predictor',
+      label: 'View source',
+      href: 'https://github.com/meharpalbasi/field-theory',
     },
   },
   {
-    title: 'FPL Analyzer',
-    techStack: ['Side Project', 'Next.js'],
-    description: 'An app that allows users to bet on the outcome of the Premier League',
-    logo: EvercastLogo,
+    title: 'FPL Analyst',
+    techStack: ['Next.js', 'React Native', 'Python', 'dbt', 'FastAPI', 'xPoints'],
+    description:
+      'fplanaly.st and its mobile companion share an automated Python, dbt, and FastAPI pipeline plus an xPoints model. Together they power player research, squad analysis, fixture planning, price tracking, and transfer recommendations.',
+    logo: FplAnalystLogo,
+    logoInset: true,
     link: {
       label: 'fplanaly.st',
       href: 'https://fplanaly.st/',
     },
   },
   {
-    title: 'LFC Analytics',
-    techStack: ['Side Project', 'Python', 'Scraping', 'R', 'MPLSoccer'],
-    description: 'A Twitter account dedicated to match reports and analysis of Liverpool FC. All graphics/stats are created in R or Python (using mplsoccer). Data is scraped from WhoScored, FotMob, and SofaScore',
-    logo: EvercastLogo,
-    link: {
-      label: 'X',
-      href: 'https://x.com/LFCAnalytic',
-    },
-  },
-  {
-    title: 'FPL Player xPoints Model',
-    techStack: ['Python', 'Machine Learning', 'SKLearn', 'Random Forest'],
-    description: 'An open source model that predicts the xPoints of FPL players based on their performance',
-    logo: EvercastLogo,
-    link: {
-      label: 'Github',
-      href: 'https://github.com/meharpalbasi/xPoints',
-    },
-  },
-  {
-    title: 'NBA Lineup Analyzer',
-    techStack: ['Side Project', 'Python', 'Next.Js'],
-    description: 'Application that breaks down advanced analytics of all NBA lineups from the 2024-2025 season, inspired by my Streamlit version',
-    logo: EvercastLogo,
+    title: 'NBA Lineup Analytics',
+    techStack: ['Python', 'Next.js', 'nba_api', 'RAPM', 'Data pipelines'],
+    description:
+      'A lineup and player impact platform backed by an automated NBA data pipeline, advanced metrics, RAPM, and static data publishing.',
+    logo: NbaLineupLogo,
     link: {
       label: 'nbalineup.vercel.app',
       href: 'https://nbalineup.vercel.app/',
     },
   },
   {
-    title: 'FPL Player and Team Dashboard',
-    techStack: ['Side Project', 'Next.js'],
-    description: 'A dashboard that allows users to view stats of players and teams in FPL',
-    logo: EvercastLogo,
+    title: 'Premier League Prediction Markets',
+    techStack: ['Next.js', 'FastAPI', 'Python', 'PostgreSQL', 'WebSockets'],
+    description:
+      'A live football market terminal comparing Polymarket and Kalshi prices, tracking market history, signals, arbitrage, and closing-line performance.',
+    logo: PredictionMarketsLogo,
     link: {
-      label: 'Vercel',
-      href: 'https://fps-player-app.vercel.app',
-    },
-  },
-  {
-    title: 'FPL Price Change Bot',
-    techStack: ['Side Project', 'Python', 'Telegram API', 'Railway'],
-    description: 'A Telegram bot that sends you the price changes of FPL players daily',
-    logo: EvercastLogo,
-    link: {
-      label: 'Telegram',
-      href: 'https://web.telegram.org/a/#-1002392242605',
-    },
-  },
-  {
-    title: 'FPL Analytics Pipeline',
-    techStack: ['Side Project', 'Python', 'dbt', 'FastAPI', 'Railway'],
-    description: 'Smart FPL data pipeline with REST API that auto-fetches data daily, transforms with dbt models, and powers fplanaly.st with 8+ analytics endpoints',
-    logo: EvercastLogo,
-    link: {
-      label: 'API',
-      href: 'https://fpldbt-production.up.railway.app',
-    },
-  },
-  {
-    title: 'Resume.me',
-    techStack: ['Side Project', 'Next.js', 'TypeScript'],
-    description: 'My Resume which you can access on the website you are currently on, built with Next.js.',
-    logo: JarockiMeLogo,
-    link: {
-      label: 'meharpalbasi.fyi',
-      href: 'https://www.meharpalbasi.fyi',
-    },
-  },
-  {
-    title: 'meharpalbasi.com',
-    techStack: ['Side Project', 'Next.js', 'Notion API'],
-    description: 'The Website you are currently on, built with Next.js',
-    logo: Minimal,
-    link: {
-      label: 'meharpalbasi.com',
-      href: 'meharpalbasi.com',
+      label: 'Open app',
+      href: 'https://prediction-markets-football.vercel.app',
     },
   },
 ];
@@ -145,97 +106,82 @@ export const MyCurrentProjects: Project[] = [
 export const MyPastProjects: Project[] = [
   {
     title: 'NFL Interception Model',
-    techStack: ['Python', 'DataScience', 'SKLearn', 'Data Science'],
-    description: "In this project I use the NFL's play by play data to calculate which Quarterbacks under-performed vs over-performed their expected amount of interceptions. In this model I use a logistic regression, random forest and an XGBOOST model; calculating subsequent Brier scores.",
-    logo: EvercastLogo,
+    techStack: ['Python', 'scikit-learn', 'XGBoost'],
+    description:
+      'Models expected interceptions from NFL play-by-play data and compares quarterback performance using Brier scores.',
     link: {
-      label: 'github.com',
+      label: 'View source',
       href: 'https://github.com/meharpalbasi/interception_modelling',
     },
   },
   {
-    title: 'NFL Rush Yards Overexpected Model',
-    techStack: ['Python', 'DataScience', 'SKLearn', 'Data Science'],
-    description: "In this project I use the NFL's play by play data to calculate which Running Backs over-performed their expected amount of rushing yards. In this model I use a XGBOOST model.",
-    logo: EvercastLogo,
+    title: 'NFL Rushing Yards Over Expected',
+    techStack: ['Python', 'XGBoost', 'nflfastR'],
+    description:
+      'Estimates expected rushing yards from play context to identify running backs who created more than their blocking and situation allowed.',
     link: {
-      label: 'github.com',
+      label: 'View source',
       href: 'https://github.com/meharpalbasi/rushyardsoverexpected',
     },
   },
   {
-    title: 'NBA Lineup Analyzer',
-    techStack: ['Side Project', 'Python', 'Streamlit'],
-    description: 'Application that breaks down advanced analytics of all NBA lineups from the 2023-2024 season',
-    logo: EvercastLogo,
+    title: 'NFL Kicking Over Expected',
+    techStack: ['Python', 'Random Forest', 'nflfastR'],
+    description:
+      'Measures field-goal difficulty and kicker performance with a random forest model trained on NFL play-by-play data.',
     link: {
-      label: 'streamlit.io',
-      href: 'https://nbalineupanalyzer.streamlit.app',
-    },
-  },
-  {
-    title: 'Who\'s the best Kicker in the NFL?',
-    techStack: ['Python', 'DataScience', 'SKLearn', 'Data Science'],
-    description: "In this project I use the NFL's play by play data to calculate which Kicker over-performed their expected amount of Field Goals. In this model I use a random forest model. P.S It's Chris Boswell",
-    logo: EvercastLogo,
-    link: {
-      label: 'github.com',
+      label: 'View source',
       href: 'https://github.com/meharpalbasi/Kicking-Over-Expected',
     },
   },
   {
-    title: 'S&P 500 Analyzer',
-    techStack: [
-      'Streamlit',
-      'Python',
-      'Yahoo Finance API',
-    ],
+    title: 'Liverpool FC Analytics',
+    techStack: ['Python', 'R', 'Web scraping', 'mplsoccer'],
     description:
-      'In this Streamlit program I visualize the top gainers and losers of the S&P 500 within a chosen timeframe.',
-    logo: EvercastLogo,
+      'Match reports and original football graphics built from data collected from WhoScored, FotMob, and SofaScore.',
     link: {
-      label: 'github.com',
-      href: 'https://github.com/meharpalbasi/equity-dashboard',
+      label: 'View on X',
+      href: 'https://x.com/LFCAnalytic',
     },
   },
   {
-    title: 'NFL Quarterback Through the Seasons',
-    techStack: ['Python', 'Streamlit'],
-    description: 'In this streamlit application I use the NFL play by play data to visualize NFL Quarterbacks cumulative Passing Yards, Touchdowns and Interceptions through the weeks.',
-    logo: EvercastLogo,
+    title: 'Premier League Player Props',
+    techStack: ['Next.js', 'Prisma', 'Auth.js', 'SQLite'],
+    description:
+      'A prediction game for Premier League player outcomes with user accounts, picks, and season-long scoring.',
     link: {
-      label: 'github.com',
-      href: 'https://github.com/meharpalbasi/NFL-Quarterback-App',
+      label: 'View source',
+      href: 'https://github.com/meharpalbasi/premier_league_predictor',
     },
   },
   {
-    title: 'FBRef Scraper',
-    techStack: ['Python', 'Airflow'],
-    description: "Scrapes, combines, and cleans data from FBRef's top 5 leagues and schedules it to a Postgres database",
-    logo: EvercastLogo,
+    title: 'FPL Price Change Bot',
+    techStack: ['Python', 'Telegram API', 'Railway'],
+    description:
+      'A scheduled Telegram bot that publishes daily Fantasy Premier League player price changes.',
     link: {
-      label: 'github.com',
+      label: 'Open Telegram',
+      href: 'https://web.telegram.org/a/#-1002392242605',
+    },
+  },
+  {
+    title: 'FBRef Data Pipeline',
+    techStack: ['Python', 'Airflow', 'PostgreSQL'],
+    description:
+      "Collects, combines, and cleans data from FBRef's top five leagues on a scheduled pipeline.",
+    link: {
+      label: 'View source',
       href: 'https://github.com/meharpalbasi/Football_Reference_Scraper_And_Cleaner/tree/main',
     },
   },
   {
-    title: 'Compare your portfolio to the S&P 500',
+    title: 'Portfolio Analysis',
     techStack: ['Python', 'Streamlit'],
-    description: 'A Streamlit application that allows you to compare your portfolio to the S&P 500, with risk and return analysis',
-    logo: EvercastLogo,
+    description:
+      'Compares a personal portfolio with the S&P 500 through risk, return, drawdown, and allocation analysis.',
     link: {
-      label: 'github.com',
+      label: 'View source',
       href: 'https://github.com/meharpalbasi/Portfolio-Analysis',
-    },
-  },
-  {
-    title: 'FPL User Analysis',
-    techStack: ['Side Project', 'Python', 'Streamlit'],
-    description: 'Application that shows you your FPL team performance and how you compare to the average FPL user as well as history',
-    logo: EvercastLogo,
-    link: {
-      label: 'streamlit.io',
-      href: 'https://fpluser.streamlit.app',
     },
   },
 ];
@@ -365,7 +311,7 @@ export const PeopleWorthFollowingOnTwitter = [
     link: 'https://x.com/coltybrah',
   },
   {
-    name: "Marc Lou",
+    name: 'Marc Lou',
     link: 'https://x.com/marc_louvion',
   },
   {
@@ -489,12 +435,14 @@ export const Tools = {
     },
     {
       title: 'Logitech MX Master 3',
-      description: "Because the Apple Magic Mouse sucks and this is the only mouse that doesn't lag with my MacBook",
+      description:
+        "Because the Apple Magic Mouse sucks and this is the only mouse that doesn't lag with my MacBook",
       href: 'https://amzn.to/3qXIvXl',
     },
     {
       title: 'The Brick',
-      description: "I get distracted way too easily, so I use this to block distracting websites and apps on my phone. The act of scanning the brick works better than any app I've tried",
+      description:
+        "I get distracted way too easily, so I use this to block distracting websites and apps on my phone. The act of scanning the brick works better than any app I've tried",
       href: 'https://getbrick.app/?srsltid=AfmBOoobMEyT-K3rqn1XIRAk-VGE-rxX1Wk48pnWCjAlIAbRpVGCDSfy',
     },
   ],
