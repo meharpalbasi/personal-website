@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- NBALineup mark: five-bar lineup profile, standout bar in orange. -->
+  <rect width="64" height="64" rx="14" fill="#080C16"/>
+  <g>
+    <rect x="11.6" y="29" width="6.4" height="14.4" rx="3.2" fill="#E6ECF5" opacity="0.55"/>
+    <rect x="20.56" y="21" width="6.4" height="22.4" rx="3.2" fill="#E6ECF5" opacity="0.8"/>
+    <rect x="29.52" y="11.4" width="6.4" height="32" rx="3.2" fill="#FF6600"/>
+    <rect x="38.48" y="32.2" width="6.4" height="11.2" rx="3.2" fill="#E6ECF5" opacity="0.45"/>
+    <rect x="47.44" y="24.2" width="6.4" height="19.2" rx="3.2" fill="#E6ECF5" opacity="0.68"/>
+    <rect x="11.6" y="47.7" width="42.24" height="3.5" rx="1.75" fill="#E6ECF5" opacity="0.35"/>
+  </g>
+</svg>
